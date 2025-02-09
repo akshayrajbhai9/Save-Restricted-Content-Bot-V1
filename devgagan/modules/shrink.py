@@ -81,7 +81,7 @@ async def token_handler(client, message):
             [premium]    
         ])
          
-        await message.reply_photo(
+        await message.reply_photo(photo="https://graph.org/file/4e80dc2f4f6f2ddadb4d2.jpg",
             msg.photo.file_id,
             caption=(
                 "「 ✦ 𝙃𝙞 👋 𝙒𝙚𝙡𝙘𝙤𝙢𝙚, 𝙒𝙖𝙣𝙣𝙖 𝙞𝙣𝙩𝙧𝙤...? ✦ 」\n\n"
