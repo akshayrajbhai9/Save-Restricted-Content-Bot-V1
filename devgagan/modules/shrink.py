@@ -74,18 +74,19 @@ async def token_handler(client, message):
     user_id = message.chat.id
     if len(message.command) <= 1:
         image_url = "https://i.postimg.cc/v8q8kGyz/startimg-1.jpg"
-        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/savemme_content")
-        premium = InlineKeyboardButton("Get Premium", url="https://t.me/Usercourse")   
+        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/team_spy_pro")
+        premium = InlineKeyboardButton("Get Premium", url="https://t.me/kingofpatal")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
             [premium]    
-        ])     
+        ])
+         
         await message.reply_photo(
             msg.photo.file_id,
             caption=(
-                "「 ✦ 𝙃𝙞 👋 𝙒𝙚𝙡𝙘𝙤𝙢𝙚, 𝙒𝙖𝙣𝙣𝙖 𝙞𝙣𝙩𝙧𝙤...? ✦ 」\n\n"
-                "🧑‍🏫  ɪ ᴄᴀɴ ꜱᴀᴠᴇ 🃏 ᴘᴏꜱᴛꜱ ꜰʀᴏᴍ ᴄʜᴀɴɴᴇʟꜱ ᴏʀ ɢʀᴏᴜᴘꜱ ᴡʜᴇʀᴇ ꜰᴏʀᴡᴀʀᴅɪɴɢ ɪꜱ ᴏꜰꜰ\n\n" "🙋 ɪ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ 🎬 ᴠɪᴅᴇᴏꜱ/💿 ᴀᴜᴅɪᴏ ꜰʀᴏᴍ ʏᴛ, ɪɴꜱᴛᴀ, ... ꜱᴏᴄɪᴀʟ ᴘʟᴀᴛꜰᴏʀᴍꜱ.\n\n"
-                "🤞⚜  ᴜꜱᴇ  /token  ᴛᴏ ᴜꜱᴇ ᴘʀᴇᴍɪᴜᴍ👑 ꜰᴏʀ ꜰʀᴇᴇ\n\n" "🌷✨ꜱɪᴍᴘʟʏ ꜱᴇɴᴅ ᴘᴏꜱᴛ ʟɪɴᴋ ᴏꜰ ᴀ ᴘᴜʙʟɪᴄ ᴄʜᴀɴɴᴇʟ. ꜰᴏʀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀɴɴᴇʟꜱ, ᴅᴏ /login.✨.\n\n" "🥀⚡ꜱᴇɴᴅ /help ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ."
+                "Hi 👋 Welcome, Wanna intro...?\n\n"
+                "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
+                "✳️ Simply send the post link of a public channel. For private channels, do /login. Send /help to know more."
             ),
             reply_markup=keyboard
         )
