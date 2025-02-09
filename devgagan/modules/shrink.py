@@ -79,8 +79,7 @@ async def token_handler(client, message):
         keyboard = InlineKeyboardMarkup([
             [join_button],   
             [premium]    
-        ])
-         
+        ])     
         await message.reply_photo(
             msg.photo.file_id,
             caption=(
